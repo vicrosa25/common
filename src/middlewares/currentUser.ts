@@ -4,7 +4,7 @@ import { Response } from "express";
 import { Request } from "express";
 
 interface UserPayload {
-  id: string;
+  id: number;
   email: string;
 }
 
