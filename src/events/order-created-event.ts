@@ -1,4 +1,4 @@
-import { OrderEstatus } from "./types/order-status";
+import { OrderStatus } from "./types/order-status";
 import { Subjects } from "./subjects";
 
 export interface OrderCreateEvent {
