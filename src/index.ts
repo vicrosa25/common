@@ -5,6 +5,7 @@ export * from "./errors/DatabaseConnectionError";
 export * from "./errors/NotAuthorizeError";
 export * from "./errors/NotFoundError";
 export * from "./errors/RequestValidationError";
+export * from "./errors/OptimisticLockVersionMismatchError";
 
 // Middleware
 export * from "./middlewares/currentUser";
