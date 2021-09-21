@@ -24,6 +24,3 @@ export * from "./events/order-cancelled-event";
 
 // enum
 export * from "./events/types/order-status";
-
-// Typeorm Subscriber
-export * from "./subsbriber/occSubs";
