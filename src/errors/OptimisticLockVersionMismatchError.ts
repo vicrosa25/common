@@ -1,4 +1,3 @@
-// OptimisticLockVersionMismatchError.ts
 export class OptimisticLockVersionMismatchError extends Error {
   name = "OptimisticLockVersionMismatchError";
 
