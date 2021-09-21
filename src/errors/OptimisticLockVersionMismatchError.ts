@@ -1,14 +1,10 @@
-import { CustomError } from "./CustomError";
-
+// OptimisticLockVersionMismatchError.ts
 export class OptimisticLockVersionMismatchError extends Error {
-  statusCode = 409;
+  name = "OptimisticLockVersionMismatchError";
 
   constructor(entity: string, expectedVersion: number, actualVersion: number) {
     super();
-    Object.setPrototypeOf(this, OptimisticLockVersionMismatchError.prototype);
+    Reflect.setPrototypeOf(this, OptimisticLockVersionMismatchError.prototype);
     this.message = `The optimistic lock on entity ${entity} failed, version ${expectedVersion} was expected, but is actually ${actualVersion}.`;
-  }
-  serializeError() {
-    return [{ message: this.message }];
   }
 }
