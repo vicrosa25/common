@@ -4,11 +4,11 @@
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
   "files": [
-    "build/**/*"
+    "./build/**/*"
   ],
   "license": "MIT",
   "scripts": {
-    "clean": "del ./build/*",
+    "clean": "del ./build/**/*",
     "build": "yarn clean && tsc",
     "pub": "git add . && git commit -m \"Updates\" && git push && yarn version --patch && yarn build && yarn publish"
   },
