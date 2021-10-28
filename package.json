@@ -9,7 +9,7 @@
   "license": "MIT",
   "scripts": {
     "clean": "del ./build/*",
-    "build": "npm run clean && tsc",
+    "build": "yarn clean && tsc",
     "pub": "git add . && git commit -m \"Updates\" && git push && yarn version --patch && yarn build && yarn publish"
   },
   "devDependencies": {
