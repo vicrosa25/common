@@ -1,5 +1,11 @@
 import { Subjects } from "./subjects";
 
+interface Photo {
+  cloudId: string;
+  url: string;
+  secureUrl: string;
+}
+
 export interface TicketCreatedEvent {
   subject: Subjects.TicketCreated;
   data: {
@@ -8,5 +14,6 @@ export interface TicketCreatedEvent {
     title: string;
     price: number;
     userId: number;
+    photos: Photo[];
   };
 }
