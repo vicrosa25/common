@@ -14,6 +14,7 @@ export interface TicketCreatedEvent {
     title: string;
     price: number;
     userId: number;
+    description: string;
     photos: Photo[];
   };
 }
