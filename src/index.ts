@@ -26,3 +26,4 @@ export * from "./events/payment-created-event";
 
 // enum
 export * from "./events/types/order-status";
+export * from "./events/types/product-status";
